@@ -1,0 +1,168 @@
+{% extends 'deeplearning.html' %}
+{% load static %}
+
+
+{% block content_deeplearning %}
+
+<section>
+    <header class="main">
+        <h1>Deep Learning</h1>
+        
+        <ul class="icons icons-badges">
+            <li><span class="label"><img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=plastic&logo=Jupyter"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/Python->3.7-3776AB?style=plastic&logo=Python"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/Tensoflow-FF6F00?style=plastic&logo=Tensoflow"/></span></li>
+            <!-- <li><span class="label"><img src="https://img.shields.io/badge/scikit-learn-F7931E?style=plastic&logo=scikit-learn"/></span></li> -->
+            <li><span class="label"><img src="https://img.shields.io/badge/Numpy-073343?style=plastic&logo=Numpy"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/matplotlib-366f81?style=plasticlogo=matplotlib"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/seaborn-adafc2?style=plastic&logo=seaborn"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=plastic&logo=Streamlit"/></span></li>
+            
+        </ul>
+        <hr>
+    </header>
+    <!-- Deep Learning Projects -->
+        <!-- <h2 id="elements">Deep Learning</h2> -->
+        <div class="row gtr-200">
+            <div class="col-6 col-12-small">
+                <h2>Automatic Number Plate Recognition and EasyOCR</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image right">
+                            <a href="https://camo.githubusercontent.com/8643b4302af06c924f3557374d952f246d7e8793ae468f16ac2c6fd115d78d19/68747470733a2f2f692e696d6775722e636f6d2f72684f4d464e6b2e706e67" target="_blank">
+                                <img src="https://camo.githubusercontent.com/8643b4302af06c924f3557374d952f246d7e8793ae468f16ac2c6fd115d78d19/68747470733a2f2f692e696d6775722e636f6d2f72684f4d464e6b2e706e67" alt="" style="width:416; height:256" />
+                            </a>
+                        </span>
+                        This exercise is an implementation of Automatic Number Plate Recognition (ANPR) using EasyOCR library in Python. The goal of this exercise is to automatically recognize license plate numbers from an image, 
+                        live camera or a video by using transfer learning from Pretrained Model <code>SSD MobileNet V2</code> from Tensorflow Model Zoo. The dataset used in this exercise taken from 
+                        <a href="https://www.kaggle.com/datasets/andrewmvd/car-plate-detection" target="_blank">kaggle</a>.
+                    </p>
+                        <p style="text-align: justify; text-justify: inter-word;">The file <code>1.PrepareDataset.py</code>performs Creation of necessary directories for organizing image and annotation files, Extracts image and annotation files from a downloaded zip file i.e. 
+                            dataset downloaded from kaggle, Moves the image and annotation files to their respective directories, Splits the image and annotation files into train and test directories using a predefined ratio, 
+                            Compresses the train and test directories into a tar.gz file.
+                        </p>
+                        <p style="text-align: justify; text-justify: inter-word;">
+                            <code>2.ColabANPR_and_EasyOCR_ColabRun_v1.ipynb</code>, this does the Tensorflow Object Detection installation on google colab to utilize the power of GPU, create Label Map, Creates TF Records, 
+                            Copy Model Config to Training Folder, Update Config For Transfer Learning, Train and Evaluate the model, Load Trained Model From Checkpoint and perform detection tasks from given images, webcam, and 
+                            videos. It also converts the model to TFJS and TFLite for further usage.
+                        </p>
+                        <p style="text-align: justify; text-justify: inter-word;">
+                            <code>2.Local_ANPR_Detection_and_EasyOCR.ipynb</code> doest the same things as above but it is for the local machine where GPU is not available.
+                        </p>
+                        <p style="text-align: justify; text-justify: inter-word;">
+                            <code>3.DetectFromImage_EasyOCR.py</code>, <code>4.DetectFromRealTimeFeed_EasyOCR.py</code>, <code>5.DetectFromVideos_EasyOCR.py</code> are seperate scripts for object detection from images, webcam, 
+                            videos respectively
+                        </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <p><a href="https://github.com/mm-mazhar/Tensorflow-Object-Detection-Installation-and-ANPReasyOCR-Streamlit-App" target="_blank">Streamlit App</a></p>
+                        <p><a href="https://youtu.be/syjWdTto2-o" target="_blank">Watch Demo</a></p>
+                        <p>More on Github &nbsp; <a href="https://github.com/mm-mazhar/Automatic-Number-Plate-Recognition-and-EasyOCR" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Yolo v5 | Streamlit App | Road Sign Detection</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image left">
+                            <a href="https://camo.githubusercontent.com/5368bbf6b413b5b66b2482f936f3d4f711bca5c00df8941f1923ac2aa9dcce72/68747470733a2f2f692e696d6775722e636f6d2f396a6d494432442e706e67" target="_blank">
+                                <img src="https://camo.githubusercontent.com/5368bbf6b413b5b66b2482f936f3d4f711bca5c00df8941f1923ac2aa9dcce72/68747470733a2f2f692e696d6775722e636f6d2f396a6d494432442e706e67" alt="" style="width:416; height:256" />
+                            </a>
+                        </span>
+                        The goal of this exercise is to detect road signs from given images, webcam and videos. Dataset is taken from kaggle. <code>Yolov5_Colab_CustomModel_Training.ipynb</code> performs Yolo v5 Custom Training
+                        which involves cloning the github repo of YoloV5, Installing requirements, Unzipping Dataset and Moving data.yaml, Checking and defining the number of classes in our dataset, Model configuration for YoloV5,
+                        Customize iPython writefile so we can write variables, Model Configuration for our Model, Doing Changes in train.py for training, Training, and Inferencing with our custom Trained Model.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <p><a href="https://github.com/mm-mazhar/Yolo-v5-Streamlit-App-Road-Sign-Detection/blob/main/app.py" target="_blank">Streamlit App</a></p>
+                        <p><a href="https://youtu.be/l0yEcua5HEw" target="_blank">Watch Demo</a></p>
+                        <p>More on Github &nbsp; <a href="https://github.com/mm-mazhar/Yolo-v5-Streamlit-App-Road-Sign-Detection" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Yolo V5 | Streamlit App | Multiple Object Detection on Pretrained Model</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image right">
+                            <a href="https://i.imgur.com/8TD7qGt.jpg" target="_blank">
+                                <img src="https://i.imgur.com/8TD7qGt.jpg" alt="" style="width:416; height:256" />
+                            </a>
+                        </span>
+                        This Python code is for a Streamlit app that uses YOLOv5, an object detection model, to perform object detection on a user-supplied image or video, or from a live video feed. The app allows the user to select
+                        which device to use for inference (CPU or GPU), the minimum confidence score threshold, and which classes of objects to detect. The app displays the detected objects in the input media and their corresponding
+                        confidence scores. The code imports necessary libraries, such as Streamlit, OpenCV and defines a few helper functions, including one to get the latest folder in a certain directory, which is used to get the 
+                        latest output folder for the detection results, and another to get all subdirectories in a certain path. The main function is defined to run the Streamlit app. The app has a sidebar that allows the user to 
+                        select the activity (image, video, or live feed), select the device, select the minimum confidence score threshold, and select which object classes to detect. The app also displays the selected input media 
+                        and detected objects with their confidence scores.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">    
+                        <p>Streamlit App: <a href="https://youtu.be/xTq5YP5gHSo" target="_blank">Watch Demo</a></p>
+                        <p>More on Github &nbsp; <a href="https://github.com/mm-mazhar/Yolo-v5-Streamlit-App-Pretrained-Model" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Face Mask Detection</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image left">
+                            <a href="https://camo.githubusercontent.com/7b83e0ae6bc866333125fa9ded403fba7e12f1028fb0753740353a76e81085b7/68747470733a2f2f692e696d6775722e636f6d2f4e796c415a52472e706e67" target="_blank">
+                                <img src="https://camo.githubusercontent.com/7b83e0ae6bc866333125fa9ded403fba7e12f1028fb0753740353a76e81085b7/68747470733a2f2f692e696d6775722e636f6d2f4e796c415a52472e706e67" alt="" style="width:416; height:256" />
+                            </a>
+                        </span>
+                        Goal of this exercise is to detect whether the person is wearing a face mask or not. As usual dataset is taken from <a href="https://www.kaggle.com/code/jiaowoguanren/face-mask-detection-tensorflow-cnn-resmlp/data" target="_blank">kaggle</a>.
+                        <code>2.Colab_Training_and_Detection.ipynb</code> script does the Tensorflow Object Detection installation on google colab to utilize the power of GPU, create Label Map, Creates TF Records, 
+                        Copy Model Config to Training Folder, Update Config For Transfer Learning, Train and Evaluate the model, Load Trained Model From Checkpoint and perform detection tasks from given images, webcam, and 
+                        videos. It also converts the model to TFJS and TFLite for further usage.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <p>More on Github &nbsp; <a href="https://github.com/mm-mazhar/Face-Mask-Detection" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Image Classification | Detect Infected Blood Cells of Maleria Bacteria</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image right">
+                            <a href="https://i.imgur.com/gpAXdfA.png" target="_blank">
+                                <img src="https://i.imgur.com/gpAXdfA.png" alt="" style="width:416; height:256" />
+                            </a>
+                        </span>
+                        This is a web application for detecting malaria using a pre-trained deep learning model. The application is built using the Streamlit framework, which makes it easy to create and share interactive 
+                        data applications. The app starts by importing the necessary libraries, including Streamlit and Keras for loading the pre-trained model. It also imports a custom module called "FilesUpload," which is 
+                        used to handle file uploads from the user interface. The pre-trained model is loaded from disk, and the image is passed through the model for prediction. The output is displayed as either 
+                        "Infected/Parasitized" or "Uninfected," along with the probability of the prediction.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">    
+                        <p>Data Source: <a href="https://ceb.nlm.nih.gov/repositories/malaria-datasets/" target="_blank">Official NIH Website</a></p>
+                        <p>Streamlit App: <a href="https://mazqoty-malaria-detection-app-9d0gj6.streamlit.app" target="_blank">Watch Demo</a></p>
+                        <p>More on Github &nbsp; <a href="https://github.com/mm-mazhar/malaria_detection" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Convolutional neural network (CNN) | CIFAR-100 dataset</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image left">
+                            <a href="https://camo.githubusercontent.com/a8149a6df895f51003246e32ec954bbf13c7e7094f13c097052f1a860cdd1d73/68747470733a2f2f692e696d6775722e636f6d2f463431736637712e706e67" target="_blank">
+                                <img src="https://camo.githubusercontent.com/a8149a6df895f51003246e32ec954bbf13c7e7094f13c097052f1a860cdd1d73/68747470733a2f2f692e696d6775722e636f6d2f463431736637712e706e67" alt="" style="width:416; height:256" />
+                            </a>
+                        </span>
+                        The recognition of images in this project has been done using transfer learning approach. The network built in this project uses the state-of-the-art EfficientNet-B0 which was trained on the popular, 
+                        challenging and large ImageNet dataset. Transfer learning and the idea of intelligently scaling the network (carefully balancing the network's width, depth and resolution) helped in getting a good performance
+                        on this dataset. By just training the model for 11 epochs, the model managed to achieve an accuracy of 81 percent. The training of the model has been done on a GPU and the model has also been tested on some 
+                        new random images to visualize the top 5 category predictions along with their probabilities. 
+                    </p>
+                        
+                    
+                    
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <p>Data Source: <a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank">Kaggle/Cifar-10 and Cifar-100 datasets</a> The dataset contains 3 folders - Meta, Train, Test. </p>
+                        <p>More on Github &nbsp; <a href="https://github.com/mm-mazhar/CNN_CIFAR100" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                
+            </div>
+        </div>
+</section>
+
+{% endblock content_deeplearning %}

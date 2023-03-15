@@ -1,0 +1,262 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content_index %}
+
+    <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h1>Hi, I’m Mazhar<br />
+                    From Pakistan</h1>
+                    <!-- <p style="text-align: justify; text-justify: inter-word;">Ex-Supply Chain and Procurement specialist transitioning into a Data Scientist role</p> -->
+                    <p >Ex-Supply Chain and Procurement specialist transitioning into a Data Scientist role</p>
+                </header>
+                <p style="text-align: justify; text-justify: inter-word;">
+                    Over 12 years of experience managing teams of 5-20 people. Core skills include extrapolating data and
+                    providing actionable insights aligned with computer science, modeling and statistics.
+                </p>
+                <p style="text-align: justify; text-justify: inter-word;">
+                    Goals in 2023: Work on personal ML projects/Compete in a Kaggle Competition, Interview Preparations, Taking Pythonic skills to advance level and doing 
+                    some Python Package Development, Turning Research Papers into Code.
+                </p>
+                <ul class="actions">
+                    <!-- <li><a href="{% static '/images/mazhar_CV.pdf' %}" target="_blank" class="button big" download>Download CV</a></li> -->
+                    <li><a href="#" target="_blank" class="button big" download>Download CV</a></li>
+                </ul>
+            </div>
+            <span class="image object">
+                <img src="{% static 'images/pic_02-hd-removebg.png' %}" alt="">
+            </span>
+            
+        </section>
+
+    <!-- Section -->
+        <section>
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="about-col-1">
+                            <img src="images/pic_02.jpg" alt="">
+                        </div> -->
+                        <div class="about-col-2">
+                            <h2 class="sub-title">About Me</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa optio a sequi eius tempora ullam corrupti odit ut ipsa alias quia voluptatibus, mollitia natus. Voluptate nulla sequi totam error?</p> -->
+                            <div class="tab-titles">
+                                <h4 class="tab-links active-link" onclick="opentab('skills')">Skills</h4>
+                                <h4 class="tab-links" onclick="opentab('experience')">Experience</h4>
+                                <h4 class="tab-links" onclick="opentab('education')">Education</h4>
+                            </div>
+                            <div class="tab-contents active-tab skills" id="skills">
+                                <ul>
+                                    <!-- <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                    <li><span>Web Development</span><br>Web App Development</li>
+                                    <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                                    <li><span>UI?UX</span><br>Designing Web/App Interfaces</li> -->
+                                    <li><h4><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="45" height="40"/></h4>
+                                        <span class="bar"><span class="python"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://plotly.com/python/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/plot_ly/plot_ly-official.svg" alt="python" width="45" height="40"/></a></h4>
+                                        <span class="bar"><span class="plotly"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="tensorflow"></span></span>
+                                    </li>
+                                    <!-- <li><h4><a href="https://scikit-learn.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scikit-learn/scikit-learn-original-wordmark.svg" alt="scikit-learn" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="scikit-learn"></span></span>
+                                    </li> -->
+                                    <li><h4><a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="opencv"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://spark.apache.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg" alt="python" width="45" height="40"/></a></h4>
+                                        <span class="bar"><span class="spark"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a></h4>
+                                        <span class="bar"><span class="docker"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://kafka.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="kafka" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="kafka"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="mysql"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://cassandra.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-icon.svg" alt="cassandra" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="cassandra"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://powerbi.microsoft.com/en-au/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-ar21.svg" alt="python" width="45" height="40"/></a></h4>
+                                        <span class="bar"><span class="powerbi"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_(2019%E2%80%93present).svg" alt="python" width="45" height="40"/></a></h4>
+                                        <span class="bar"><span class="excel"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="html"></span></span>
+                                    </li>
+                                    <li><h4><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="css"></span></span>
+                                    </li>
+                                    <!-- <li><h4><a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="45" height="40"/> </a></h4>
+                                        <span class="bar"><span class="bootstrap"></span></span>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="tab-contents experience" id="experience">
+                                <ul>
+                                    <li><span>2016 - Current</span><br>Operations Manager (Remote) at FM Associates</li>
+                                    <li><span>2012 - 2016</span><br>Asst. Manager Purchase at MK Engineering Services</li>
+                                    <li><span>2009 - 2012</span><br>Procurement Officer at MK Engineering Services (former MK Electronics)</li>
+                                    <li><span>2003 - 2005</span><br>Electronics Engineer (R&D) at MK Electronics</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents education" id="education">
+                                <ul><h3>Degree Courses</h3>
+                                    <li><span>2008 </span><br>MBA from The University of Northampton, England</li>
+                                    <li><span>2002</span><br>BE (Electronics) from NED University of Engineering and Technology, Karachi, Pakistan</li>
+                                </ul>
+                                <ul><h3>Certificate Courses</h3>
+                                    <li><span>2021</span><br>Coursera: Machine Learning by <em>Associate Professor Andrew Ng</em>, Stanford University</li>
+                                    <li><span>2021</span><br>Udemy: Python for Data Science and Machine Learning Bootcamp by <em> Jose Portilla</em></li></li>
+                                    <li><span>2022</span><br>Udemy: 15 days of Power BI - Complete Microsoft Power BI Bootcamp by <em>Nicolas Schuler</em></li>
+                                    <li><span>2023</span><br>Import/Export Documentation & Management Logistics & Shipping</li>
+                                    <li><span>2012</span><br>TSCM5E-Procurement-MM (ECC6.0)</li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    
+    <!-- Section -->
+        <section id="latest-work">
+            <header class="major">
+                <h2>Latest</h2>
+            </header>
+            <div class="features">
+                <article>
+                    <span class="icon fa-gem"></span>
+                    <div class="content">
+                        <h3>ANPR with EasyOCR</h3>
+                        <p style="text-align: justify; text-justify: inter-word;">Automatically Number Plate Recognition (ANPR) from given images, webcam and videos by using transfer learning from Pretrained Model SSD MobileNet v2 from TF Model Zoo.</p>
+                        <p style="text-align: justify; text-justify: inter-word;">More on &nbsp; <a href="/deeplearning" target="_blank" >Deep Learning</a></p>
+                    </div>
+                </article>
+                <article>
+                    <span class="icon solid fa-paper-plane"></span>
+                    <div class="content">
+                        <h3>Yolo v5 | Streamlit App | Road Sign Detection</h3>
+                        <p style="text-align: justify; text-justify: inter-word;">The goal of this exercise is to detect road signs from given images, webcam and videos by custom training Yolo v5 model. Dataset is taken from kaggle.</p>
+                        <p style="text-align: justify; text-justify: inter-word;">More on &nbsp; <a href="/deeplearning" target="_blank" >Deep Learning</a></p>
+                    </div>
+                </article>
+                <article>
+                    <span class="icon solid fa-rocket"></span>
+                    <div class="content">
+                        <h3>Pytubev3</h3>
+                        <p style="text-align: justify; text-justify: inter-word;">A wrapper around youtube API v3: pytubev3 is a Python library (work in progress) to simplify Youtube Data API tasks.</p>
+                        <p style="text-align: justify; text-justify: inter-word;">More on &nbsp; <a href="/pythonpackages" target="_blank" >Python Packages</a></p>
+                    </div>
+                </article>
+                <article>
+                    <span class="icon solid fa-signal"></span>
+                    <div class="content">
+                        <h3>COVID-19 DASHBOARD Django Plotly Dash App</h3>
+                        <p style="text-align: justify; text-justify: inter-word;"> This COVID-19 Dashboard tracks covid-19 confirmed, deaths, recovered, active cases. It also contains vaccination analysis.</p>
+                        <p style="text-align: justify; text-justify: inter-word;">More on &nbsp; <a href="/dataanalysiswithpython" target="_blank" >Data Analysis with Python</a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    <!-- Section -->
+        <section id="work-categories">
+            <header class="major">
+                <h2>My Work</h2>
+            </header>
+            <div class="posts">
+                <article id="dataanalysiswithpython" class="image-layer">
+                    <a href="/dataanalysiswithpython" class="image"><img src="{% static 'images/dataanalysiswithpython.jpg' %}" alt="" /></a>
+                    <div class="layer">
+                        <h3>Data Analysis with Python</h3>
+                        <a href="/dataanalysiswithpython"><i class="fas fa-external-link-alt"></i></a>
+                        <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+                    </div>
+                    <h3>Data Analysis with Python</h3>
+                    <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul> -->
+                </article>
+                <article id="machinelearning" class="image-layer">
+                    <a href="/machinelearning" class="image"><img src="{% static 'images/machinelearning.jpg' %}" alt="" /></a>
+                    <div class="layer">
+                        <h3>Machine Learning</h3>
+                        <a href="/machinelearning"><i class="fas fa-external-link-alt"></i></a>
+                        <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul> -->
+                </article>
+                <article id="deeplearning" class="image-layer">
+                    <a href="/deeplearning" class="image"><img src="{% static 'images/deeplearning2_resized.jpg' %}" alt="" /></a>
+                    <div class="layer">
+                        <h3>Deep Learning</h3>
+                        <a href="/deeplearning"><i class="fas fa-external-link-alt"></i></a>
+                        <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul> -->
+                </article>
+                <article id="pythonpackages" class="image-layer">
+                    <a href="/pythonpackages" class="image"><img src="{% static 'images/pythonpackages.jpg' %}" alt="" /></a>
+                    <div class="layer">
+                        <h3>Python Packages</h3>
+                        <a href="/pythonpackages"><i class="fas fa-external-link-alt"></i></a>
+                        <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+                    </div>
+                    <h3>Python Packages</h3>
+                    <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul> -->
+                </article>
+                <article id="sqlandpowerbi" class="image-layer">
+                    <a href="/sqlandpowerbi" class="image"><img src="{% static 'images/sql4_resized.jpg' %}" alt="" /></a>
+                    <div class="layer">
+                        <h3>SQL & PowerBI</h3>
+                        <a href="/sqlandpowerbi"><i class="fas fa-external-link-alt"></i></a>
+                        <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+                    </div>
+                    <h3>SQL & PowerBI</h3>
+                    <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul> -->
+                </article>
+                <article id="webscrapingandothers" class="image-layer">
+                    <a href="/webscrapingandothers" class="image"><img src="{% static 'images/webscrapingandothers.jpg' %}" alt="" /></a>
+                    <div class="layer">
+                        <h3>Web Scraping & Others</h3>
+                        <a href="/webscrapingandothers"><i class="fas fa-external-link-alt"></i></a>
+                        <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+                    </div>
+                    <h3>Web Scraping & Others</h3>
+                    <!-- <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul> -->
+                </article>
+            </div>
+        </section>
+
+
+{% endblock content_index %}

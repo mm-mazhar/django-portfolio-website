@@ -1,0 +1,94 @@
+{% extends 'sqlandpowerbi.html' %}
+{% load static %}
+
+{% block content_sqlandpowerbi %}
+
+<section>
+    <header class="main">
+        <h1>SQL & PowerBI</h1>
+        
+        <ul class="icons icons-badges">
+            <li><span class="label"><img src="https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=MySQL"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=plastic&logo=PostgreSQL"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/Python->3.7-3776AB?style=plastic&logo=Python"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/Power BI-F2C811?style=plastic&logo=Power BI"/></span></li>
+
+            
+        </ul>
+        <hr>
+    </header>
+    <!-- SQL & PowerBI Projects -->
+        <!-- <h2 id="elements">SQL & PowerBI</h2> -->
+        <div class="row gtr-200">
+            <div class="col-6 col-12-small">
+                <h2>Working with Facts and Dimension Tables</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image right">
+                            <a href="https://camo.githubusercontent.com/228176efddc67d2af62e7a197d6c0d1ed76600a7770cc9159f4a3663f2490690/68747470733a2f2f692e696d6775722e636f6d2f6c7654424367492e6a7067" target="_blank">
+                                <img src="https://camo.githubusercontent.com/228176efddc67d2af62e7a197d6c0d1ed76600a7770cc9159f4a3663f2490690/68747470733a2f2f692e696d6775722e636f6d2f6c7654424367492e6a7067" alt="Bulk Image Downloader"  style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        The objective of this lab is to:
+                        <ul>
+                            <li>Study the schema of the given csv file</li>
+                            <li>Design the fact tables</li>
+                            <li>Design the dimension tables</li>
+                            <li>Create a star schema using the fact and dimension tables</li>
+                        </ul>
+                        in mySQL and PostgreSQL
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">More on Github &nbsp; <a href="https://github.com/mm-mazhar/ER_and_Working-with-Facts-and-Dimension-Tables" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>ETL Using Shell Scripts</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image left">
+                            <a href="https://camo.githubusercontent.com/31fe3ce39da8de0a057cacd1dbd907c8b9253844b97095e160f5e942268b6281/68747470733a2f2f692e696d6775722e636f6d2f7538324963514f2e6a7067" target="_blank">
+                                <img src="https://camo.githubusercontent.com/31fe3ce39da8de0a057cacd1dbd907c8b9253844b97095e160f5e942268b6281/68747470733a2f2f692e696d6775722e636f6d2f7538324963514f2e6a7067" alt="Bulk Image Downloader"  style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        This shell script is an ETL (Extract, Transform, Load) pipeline for processing web server access logs and storing the data in a PostgreSQL database table.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        The script begins by creating a table called "access_log" in the "template1" database of the PostgreSQL instance running on the local host.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        Next, it downloads a compressed text file "web-server-access-log.txt.gz" from a public URL and unzips it. The file contains data about website visitors, including their timestamp, latitude, longitude, visitor ID, and other columns.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        After extracting the relevant data columns (timestamp, latitude, longitude, and visitor ID) from the unzipped file using the "cut" command, the script transforms the data delimiter from "#" to "," using the "tr" command and saves the output to a CSV file called "extracted-data.csv".
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        Finally, the script loads the CSV file into the "access_log" table using the "\COPY" command and verifies the successful data insertion by querying the table using a SELECT statement.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        Overall, this script demonstrates how to use shell commands and PostgreSQL utilities to build a simple data pipeline for processing and storing large volumes of structured data.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">More on Github &nbsp; <a href="https://github.com/mm-mazhar/ETL_with_Shell_Scripts" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <!-- <br> -->
+                    <hr>
+                <h2>Coming Soon</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image left">
+                            <a href="{% static '/images/pic04.jpg' %}" target="_blank">
+                                <img src="{% static '/images/pic04.jpg' %}" alt="Bulk Image Downloader"  style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et debitis expedita minus a aperiam? Architecto, ducimus eum nemo, error eaque minus totam fugit blanditiis alias, quae fuga facere illum.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">More on Github &nbsp; <a href="#" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+            </div>
+        </div>
+</section>
+
+{% endblock content_sqlandpowerbi %}

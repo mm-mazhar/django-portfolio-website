@@ -1,0 +1,184 @@
+{% extends 'webscrapingandothers.html' %}
+{% load static %}
+
+{% block content_webscrapingandothers %}
+
+<section>
+    <header class="main">
+        <h1>Web Scraping & Others</h1>
+        
+        <ul class="icons icons-badges">
+            <li><span class="label"><img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=plastic&logo=Jupyter"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/Python->3.7-3776AB?style=plastic&logo=Python"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/pandas-150458?style=plastic&logo=pandas"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/Selenium-43B02A?style=plastic&logo=Selenium"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/BeautifulSoup-111111?style=plastic&logo=BeautifulSoup"/></span></li>
+            <li><span class="label"><img src="https://img.shields.io/badge/RestAPI-222222?style=plastic&logo=RestAPI"/></span></li>
+        </ul>
+        <hr>
+    </header>
+    <!-- Web Scraping & Others Projects -->
+        <!-- <h2 id="elements">Web Scraping & Others</h2> -->
+        <div class="row gtr-200">
+            <div class="col-6 col-12-small">
+                <h2>Web Scraping Carrefour's E-commerce Website</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image left">
+                            <a href="{% static '/images/web_scraping.jpg' %}" target="_blank">
+                                <img src="{% static '/images/web_scraping.jpg' %}" alt="Web Scraping Carrefour An E-commerce Website"  style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        First file which is <code>1.Scraping-Carrefour_Product_Links.ipynb</code> uses Selenium to scrape product links from the Carrefour Pakistan website for products. 
+                        It imports various libraries such as webdriver, keys, WebDriverWait, Select, expected_conditions, and tqdm. It then sets the URL of the webpage to be scraped and 
+                        downloads the webdriver to be used. The script then opens the URL in Chrome browser, maximizes it, and sleeps for 20 seconds. The script then attempts to click 
+                        on a "Next" button to scrape all the products on the webpage. It keeps clicking until it reaches the end of the webpage. Afterward, the script extracts all the 
+                        product links on the webpage and saves them in a CSV file. 
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <code>2.Scraping-Carrefour_Products.ipynb</code> The script reads URLs from a CSV file and visits each page to extract product data, including title, category, price, 
+                        description, and images. It then writes this data to another CSV file. If the data is not found, it writes the product name to a separate CSV file. The script also defines 
+                        a function to write headers to the output CSV file and opens two CSV files - one for storing scraped data and one for storing data not found. It then reads the URLs 
+                        from the input CSV file, opens each URL in turn, and extracts the required data using Selenium's find_element_by_xpath and find_elements_by_class_name methods. Finally, 
+                        it writes the extracted data to the output CSV file and saves any data not found to a separate file.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <code>3.Saving_Product_Images.ipynb</code> The code is for scraping product images from URLs in an Excel file using Python's BeautifulSoup, requests, urllib, tqdm, 
+                        pandas, and csv libraries. The program reads the Excel file with image links, saves the images as jpeg files, and stores them in a specific folder. It uses a 
+                        user-agent header to avoid being blocked and a try-except block to handle errors. The progress is monitored using the tqdm library.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <code>4.Price_Extraction.ipynb</code> The program reads URLs from the input CSV file and iterates through each URL to scrape the product title and price data 
+                        It then writes the scraped data to the output CSV file. If the data is not found, it writes the URL to another CSV file. The program closes the browser instance after scraping each URL.
+                    </p>
+                    
+                    <p style="text-align: justify; text-justify: inter-word;">More on Github &nbsp; <a href="https://github.com/mm-mazhar/Scraping-Carrefour-E-commerce" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <p style="text-align: justify; text-justify: inter-word;">More Exercise on Web Scraping</p>
+                    <p style="text-align: justify; text-justify: inter-word;">Scraping E-Commerce Website &nbsp; <a href="https://github.com/mm-mazhar/Scraping-Lulu-Hypermarket-E-commerce" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <p style="text-align: justify; text-justify: inter-word;">Scraping Real State Website Exercise &nbsp; <a href="https://github.com/mm-mazhar/Scraping-Zameen.com" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Weather Forecast</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image right">
+                            <a href="https://camo.githubusercontent.com/8a48decb7b1ab1d733202f49fa29537e5e7bdf3b0fadd5b3e05f7472245dc592/68747470733a2f2f692e696d6775722e636f6d2f6850616f4945572e6a7067" target="_blank">
+                                <img src="https://camo.githubusercontent.com/8a48decb7b1ab1d733202f49fa29537e5e7bdf3b0fadd5b3e05f7472245dc592/68747470733a2f2f692e696d6775722e636f6d2f6850616f4945572e6a7067" alt="Weather Forecast"  style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        This Python code includes two functions, "citySearch" and "forecastFor5Days", that use the "requests" and "json" modules to make HTTP GET requests and handle JSON responses.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        The "citySearch" function takes a URL and a payload, sends an HTTP GET request to the URL with the given payload, and returns a JSON object if the response is successful 
+                        and contains data. If the response code is 200 but the response text is 'null', the function prints "City Not Found" and returns None. If the response code is anything 
+                        other than 200, the function prints the status code and returns None.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        The "forecastFor5Days" function also takes a URL and a payload, sends an HTTP GET request to the URL with the given payload, and returns a pandas DataFrame 
+                        containing forecast data for the next five days if the response is successful and contains data. If the response code is 200 but the response text is 'null', 
+                        the function prints "Not Found" and returns None. If the response code is anything other than 200, the function prints the status code and returns None.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        The "forecastFor5Days" function extracts data from the JSON response and creates a dictionary for each day's forecast, which is appended to the "forecast_of_5_days" list. 
+                        The function then sleeps for the amount of time it took for the previous request to complete, prints a message indicating that it has finished processing data for that 
+                        day's forecast, and repeats the process until data for all five days has been processed. The list of forecast dictionaries is then converted into a pandas DataFrame 
+                        and returned by the function.
+                    </p>
+                        
+                    <p>More on Github &nbsp; <a href="https://github.com/mm-mazhar/weatherForecast" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Image Utility: OpenCV with Streamlit</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <span class="image left">
+                            <a href="https://camo.githubusercontent.com/391b8ae2b7933081a2d1d1b8a774fa08348569cf8a6234f8ef1e501b088dd01d/68747470733a2f2f692e696d6775722e636f6d2f4a5959636c364d2e6a7067" target="_blank">
+                                <img src="https://camo.githubusercontent.com/391b8ae2b7933081a2d1d1b8a774fa08348569cf8a6234f8ef1e501b088dd01d/68747470733a2f2f692e696d6775722e636f6d2f4a5959636c364d2e6a7067" alt="Image Utility: OpenCV with Streamlit" style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        This is small image utility tool which is built with openCV and Streamlit. Following are the features it supports:
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        <ul>
+                            <li>resize images</li>                     
+                            <li>record video from local webcam</li>                     
+                            <li>write text on images/video files or live feed</li>                     
+                            <li>Take Pictures From Camera</li>                     
+                            <li>Blending Images of same/different sizes etc</li> 
+                        </ul>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                    More on Github &nbsp; <a href="https://github.com/mm-mazhar/openCVwithStreamlit" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Convert DICOM Images to JPG and Resize</h2>
+                    <p style="text-align: justify; text-justify: inter-word;"> 
+                        <span class="image right">
+                            <a href="{% static '/images/dicomimage.jpg' %}" target="_blank">
+                                <img src="{% static '/images/dicomimage.jpg' %}" alt="Convert DICOM Images to JPG and Resize" style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        This Python code defines three functions read_xray, resize, and main. It also imports necessary modules including os, sys, numpy, pandas, pydicom, and Pillow (PIL).
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        read_xray function reads DICOM files from a given path and converts the pixel data to a human-friendly view if possible by applying VOI LUT (Value of Interest Lookup Table). 
+                        The output image is normalized to a 0-255 scale, depending on the minimum and maximum values of the input array. If the image is monochrome1, the function inverts it. 
+                        Finally, the function returns the output image array.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        resize function takes an input image array, resizes it to a given width and height, and returns the output image. If keep_ratio is True, the function preserves the 
+                        aspect ratio of the input image. If resample is given, it resamples the image using the specified method.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        main function reads DICOM files from a given input path, resizes them to the given width and height, and saves them in PNG format in a new directory created for each split 
+                        (train or test) in the input directory. It also extracts metadata including image id, dimensions (dim0, dim1), and split (train or test) and saves them in a CSV file 
+                        named 'meta.csv' in a directory named 'check'. The directory path is hard-coded in the code.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        The code is written to execute main function when executed as the main program using the if __name__ == "__main__": condition.
+                    </p>  
+                    <p style="text-align: justify; text-justify: inter-word;"> 
+                        More on Github &nbsp; <a href="https://github.com/mm-mazhar/dicom_jpg_resize" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                <h2>Random Mouse Clicks on Screen</h2>
+                    <p style="text-align: justify; text-justify: inter-word;"> 
+                        <span class="image right">
+                            <a href="{% static '/images/randommouseclicks.jpg' %}" target="_blank">
+                                <img src="{% static '/images/randommouseclicks.jpg' %}" alt="Convert DICOM Images to JPG and Resize" style="width:416; height:256" />
+                            </a>
+                        </span>
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        This is very small script, idea is to keep Colab Training Session Alive by random clicks on the screen
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        This Python code imports the sys and pyautogui modules, as well as the randint function from the random module. The code then sets a random pause time 
+                        (between 1 and 3 seconds) for each PyAutoGUI call. The code then gets the size of the primary monitor and prints out its resolution. The code enters a while loop 
+                        and generates random values for the number of seconds to move the mouse to a new position, the number of clicks to perform, and the number of seconds to wait
+                        between clicks. It also generates random coordinates to move the mouse and click, and gets the current position of the mouse. It then moves the mouse to the 
+                        generated coordinates, and performs a click with the left mouse button, using the previously generated values for the number of clicks and wait time between clicks.
+                    </p>
+                    <p style="text-align: justify; text-justify: inter-word;"> 
+                        More on Github &nbsp; <a href="https://github.com/mm-mazhar/PyAutoGUI-Random-Clicks-on-Screen" target="_blank" class="icon brands fa-github fa-2x"><span class="label">Github</span></a>
+                    </p>
+                    <!-- <br> -->
+                    <hr>
+                <!-- Next -->
+                
+            </div>
+        </div>
+</section>
+
+{% endblock content_webscrapingandothers %}

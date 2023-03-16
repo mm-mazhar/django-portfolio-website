@@ -3,8 +3,8 @@ gunicorn
 django-environ
 dj-database-url
 psycopg2-binary
-django-cleanup
 #### END For production/render.com ####
+django-cleanup
 bpython==0.24
 brotli==1.0.9
 brotlicffi==1.0.9.2

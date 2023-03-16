@@ -1,4 +1,7 @@
 gunicorn
+django-environ
+dj-database-url
+psycopg2-binary
 bpython==0.24
 brotli==1.0.9
 brotlicffi==1.0.9.2
@@ -25,7 +28,7 @@ ordereddict==1.1
 PasteScript==3.3.0
 Pillow==9.4.0
 protobuf==4.22.1
-psycopg2==2.9.5
+# psycopg2==2.9.5
 pylibmc==1.6.3
 pymemcache==4.0.0
 pyOpenSSL==23.0.0

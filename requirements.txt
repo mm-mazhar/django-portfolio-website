@@ -4,6 +4,19 @@ django-environ
 dj-database-url
 psycopg2-binary
 #### END For production/render.com ####
+asgiref==3.6.0
+backports.zoneinfo==0.2.1
+certifi==2022.12.7
+Django==4.1.7
+docopt==0.6.2
+idna==3.4
+pkg-resources==0.0.0
+requests==2.28.2
+setuptools==44.0.0
+sqlparse==0.4.3
+urllib3==1.26.15
+yarg==0.1.9
+
 django-cleanup
 bpython==0.24
 brotli==1.0.9

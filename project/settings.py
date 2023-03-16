@@ -24,29 +24,27 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #=================Development settings================
 
 #SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-x$*dnlvo3+6kdgw=tqi5$9+&%l%fbxk9#j)3=vc!h+oa0o@&y3'
+# SECRET_KEY = 'django-insecure-x$*dnlvo3+6kdgw=tqi5$9+&%l%fbxk9#j)3=vc!h+oa0o@&y3'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = []
 
 #=================END Development settings============
 
 #=================Production settings=================
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ.get('SECRET_KEY')
-# SECRET_KEY = 'django-insecure-x$*dnlvo3+6kdgw=tqi5$9+&%l%fbxk9#j)3=vc!h+oa0o@&y3'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
-# # SECURITY WARNING: don't run with debug turned on in production!
-# # DEBUG = bool(int(os.environ.get('DEBUG')))
-# DEBUG = False
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = bool(int(os.environ.get('DEBUG')))
 
-# ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')
-# if ALLOWED_HOSTS_ENV:
-#     ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))
+ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')
+if ALLOWED_HOSTS_ENV:
+    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))
 
 #=============END Production settings=================
 

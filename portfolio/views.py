@@ -13,9 +13,9 @@ def dataanalysiswithpython(request):
 def genai(request):
     return render(request, 'portfolio/_genai.html')
 
-# deeplearning page
-def deeplearning(request):
-    return render(request, 'portfolio/_deeplearning.html')
+# mldlcv page
+def mldlcv(request):
+    return render(request, 'portfolio/_mldlcv.html')
 
 # pythonpackages page
 def pythonpackages(request):

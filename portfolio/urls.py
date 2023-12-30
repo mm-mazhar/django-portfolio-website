@@ -10,7 +10,7 @@ urlpatterns = [
         name="dataanalysiswithpython",
     ),
     path("genai/", views.genai, name="genai"),
-    path("deeplearning/", views.deeplearning, name="deeplearning"),
+    path("mldlcv/", views.mldlcv, name="mldlcv"),
     path("pythonpackages/", views.pythonpackages, name="pythonpackages"),
     path("sqlandpowerbi/", views.sqlandpowerbi, name="sqlandpowerbi"),
     path(

@@ -10,8 +10,8 @@ def dataanalysiswithpython(request):
     return render(request, 'portfolio/_dataanalysiswithpython.html')
 
 # genAI page
-def genAI_Apps(request):
-    return render(request, 'portfolio/_genAI_Apps.html')
+def genaiapps(request):
+    return render(request, 'portfolio/_genaiapps.html')
 
 # deeplearning page
 def deeplearning(request):

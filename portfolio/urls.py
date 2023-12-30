@@ -9,7 +9,7 @@ urlpatterns = [
         views.dataanalysiswithpython,
         name="dataanalysiswithpython",
     ),
-    path("genAI_Apps/", views.machinelearning, name="genAI_Apps"),
+    path("genaiapps/", views.machinelearning, name="genaiapps"),
     path("deeplearning/", views.deeplearning, name="deeplearning"),
     path("pythonpackages/", views.pythonpackages, name="pythonpackages"),
     path("sqlandpowerbi/", views.sqlandpowerbi, name="sqlandpowerbi"),

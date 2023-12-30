@@ -43,7 +43,7 @@ PasteScript==3.3.0
 Pillow==9.4.0
 protobuf==4.22.1
 # psycopg2==2.9.5
-pylibmc==1.6.3
+==1.6.pylibmc3
 pymemcache==4.0.0
 pyOpenSSL==23.0.0
 pytz==2022.7.1

@@ -9,9 +9,9 @@ def portfolio(request):
 def dataanalysiswithpython(request):
     return render(request, 'portfolio/_dataanalysiswithpython.html')
 
-# machinelearning page
-def machinelearning(request):
-    return render(request, 'portfolio/_machinelearning.html')
+# genAI page
+def genAI_Apps(request):
+    return render(request, 'portfolio/_genAI_Apps.html')
 
 # deeplearning page
 def deeplearning(request):

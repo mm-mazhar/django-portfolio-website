@@ -230,23 +230,23 @@ html{
   animation: bootstrap 3s;
 }
 .firebase{
-  width: 70%;
+  width: 60%;
   animation: bootstrap 3s;
 }
 .redis{
-  width: 70%;
+  width: 60%;
   animation: bootstrap 3s;
 }
 .postgresql{
-  width: 70%;
+  width: 60%;
   animation: bootstrap 3s;
 }
 .numpy{
-  width: 70%;
+  width: 60%;
   animation: bootstrap 3s;
 }
 .pandas{
-  width: 70%;
+  width: 60%;
   animation: bootstrap 3s;
 }
 

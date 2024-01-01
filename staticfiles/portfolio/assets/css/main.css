@@ -229,6 +229,29 @@ html{
   width: 60%;
   animation: bootstrap 3s;
 }
+.firebase{
+  width: 70%;
+  animation: bootstrap 3s;
+}
+.redis{
+  width: 70%;
+  animation: bootstrap 3s;
+}
+.postgresql{
+  width: 70%;
+  animation: bootstrap 3s;
+}
+.numpy{
+  width: 70%;
+  animation: bootstrap 3s;
+}
+.pandas{
+  width: 70%;
+  animation: bootstrap 3s;
+}
+
+
+
 
 .experience{
   width: 100%;

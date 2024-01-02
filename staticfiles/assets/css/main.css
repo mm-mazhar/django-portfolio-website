@@ -1308,7 +1308,7 @@ hr {
         .row.gtr-200.gtr-uniform {
           margin-top: -3em; }
           .row.gtr-200.gtr-uniform > * {
-            padding-top: 3em; } }
+            padding-top: 3em; } 
   @media screen and (max-width: 480px) {
     .row {
       display: flex;

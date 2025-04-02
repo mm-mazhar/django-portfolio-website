@@ -4,7 +4,7 @@ django-environ
 dj-database-url
 psycopg2-binary
 whitenoise
-#### END For production/render.com ####
+#### END For production/render.com ###
 asgiref==3.6.0
 certifi==2022.12.7
 Django==4.1.7
